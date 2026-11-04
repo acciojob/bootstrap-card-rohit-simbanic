@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync5 Dashboard</title>
+    <!-- Using Bootstrap 4 CSS to support the card-deck class -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+    <div class="container">
+        <!-- Main Heading -->
+        <h2 class="mb-4">Welcome to Sync5</h2>
+
+        <!-- Card 1: Independent full-width card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                New Features
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Mobile and Tablet support</h5>
+                <p class="card-text">With this new update you will be able to sync your work across a large number of platforms.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+
+        <!-- Render 2 cards inside a card-deck -->
+        <div class="card-deck">
+            
+            <!-- Card 2: Alert Card -->
+            <div class="card bg-danger text-white mb-4">
+                <div class="card-header">
+                    Alert
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Node Dead</h5>
+                    <p class="card-text">Node 5 (east-us) is offline for the last 12 days.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Image Card -->
+            <div class="card mb-4">
+                <img src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Diver underwater">
+                <div class="card-body">
+                    <h5 class="card-title">President under Pressure</h5>
+                    <p class="card-text">The US president is under pressure to respond to a widespread cyber-attack linked to China.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 12 mins ago</small></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
